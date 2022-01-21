@@ -3,6 +3,7 @@
 Console.WriteLine("Let's roll some dice, baby!");
 Console.WriteLine("---------------------------");
 
+//This is a for loop:
 for (int i = 0; i < 10; i++)
 {
     Die die1 = Roll();
