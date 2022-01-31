@@ -44,7 +44,7 @@ namespace Insulter
             //loop through the generated numbers and pull out the 3 insults in those positions
             foreach (int Index in Indexes)
             {
-                Console.WriteLine(Index); //this just pulls the actual index number out before displaying the actual insult in that number position below.
+                Console.WriteLine($"Insult Index #{Index}:"); //this just pulls the actual index number out before displaying the actual insult in that number position below.
                 Console.WriteLine(Insults[Index]);
             };
         }
