@@ -1,13 +1,18 @@
 function main() {
+  // this code: /[^a-zA-Z ]/g is a regular expression, it's taking all the text and will ignore all punctuation like . , ' and " :
   const text = getText().replace(/[^a-zA-Z ]/g, "");
+  //.split basically is making an array of words ["Look", "again", "at", "that", "dot" etc etc]:
   const words = text.split(" ");
+  //this is an empty object. It uses key value pairs, which Dictionary in C# also does.:
   const freqCounts = {};
 
   for (const word of words) {
+    //if is saying if its an empty string just skip it:
     if (word.trim() === "") {
       continue;
     }
-
+    //after skipping the empty string, then use this to count the frequency of the word
+    //.hasOwnProperty is a JS method for objects
     if (freqCounts.hasOwnProperty(word)) {
       freqCounts[word] += 1;
     } else {
