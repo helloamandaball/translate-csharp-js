@@ -7,7 +7,7 @@ function main() {
   const freqCounts = {};
 
   for (const word of words) {
-    //if is saying if its an empty string just skip it:
+    //"if" is saying if its an empty string just skip it:
     if (word.trim() === "") {
       continue;
     }

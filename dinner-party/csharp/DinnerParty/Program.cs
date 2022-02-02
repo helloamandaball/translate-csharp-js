@@ -78,8 +78,23 @@ namespace DinnerParty
                 return guests;
             }
 
+            //Same as: List<GuestTable> Table1 = new List<GuestTable>();
             GuestTable Table1 = new GuestTable();
             GuestTable Table2 = new GuestTable();
+
+
+            //Example in code review, though there are errors I'm not sure why:
+            // guests.ForEach(guest => {
+            //     if (!Table1.Any(x => x.Occupation == guest.Occupation)){
+            //         Table1.Add(guest);
+            //     }
+            //     else {
+            //         Table2.Add(guest);
+            //     }
+            // });
+            // Table1.ForEach(x => Console.WriteLine($"{x.Occupation} {x.Name}"));
+            // Table2.ForEach(x => Console.WriteLine($"{x.Occupation} {x.Name}"));
+            
 
             //use a foreach loop to iterate over a collection, such as a list
             foreach (var guest in guests)
